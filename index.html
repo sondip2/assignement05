@@ -1,103 +1,79 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate Bangladesh</title>
+    <title>Donation Page</title>
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-     <!-- google font end -->
-
-     <!-- css style -->
-      <link rel="stylesheet" href="/style.css">
-      <!-- css style end -->
-       <!-- tailwind css  -->
-       <script src="https://cdn.tailwindcss.com"></script>
-       
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-        <!-- tailwind css end -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css link -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- tailwind and daisyui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="font-lexend">
     <header class="sticky top-0 z-50">
-        <div class="bg-pink-100">
-            <nav class="w-4/5 flex md:flex-row items-center md:justify-between mx-auto py-5">
-
-                <!-- blog section -->
-                 <div>
-                    <a href="./blog.html" class="md:px-4 md:py-2 px-1 py-1 font-bold md:text-xl rounded-xl text-black border-none  bg-[#B4F461] ">Blog</a>
-                 </div>
-
-                 <!-- Donate bangladesh -->
-
-                 <div class="flex items-center gap-4">
+        <!-- nav div -->
+         <div class="bg-[#F9F7F3]">
+            <nav class="w-4/5 flex md:flex-row flex-col items-center mx-auto md:justify-between py-4">
+                <div><a href="blog.html" class="md:px-4 md:py-2 px-2 py-1 md:text-xl rounded-xl font-bold bg-[#B4F461] text-black border-none">Blog</a></div>
+                <div class="flex gap-4 items-center">
                     <img src="./image/assets/logo.png" alt="loading the image " class="w-8 h-8 md:w-12 md:h-12">
-                    <h3 class="md:text-xl
-                     font-bold text-black">Donate Bangladesh</h3>
-                 </div>
-
-                 <div class="flex items-center gap-2">
+                    <h3 class="md:text-xl font-bold text-black">DONATE BANGLADESH</h3>
+                </div>
+                <div class="flex items-center gap-2">
                     <img src="./image/assets/coin.png" alt="loading the image " class="w-5 h-5 md:w-8 md:h-8">
-
-                    <p id="bd-Balance " class="font-bold md:text-xl text-black" >55000</p>
-                    <p class="font-extrabold md:text-xl text-black">Bdt</p>
-                 </div>
-
+                    <p id="my-balance" class="font-semibold md:text-xl text-[#111111B3]">5500</p>
+                    <p class="font-semibold md:text-xl text-[#111111B3]">BDT</p>
+                </div>
             </nav>
-        </div>
-
-        <!-- button section -->
-         <div class="btn-container mx-auto flex justify-center border-b-2 border-[#11111128] py-5 gap-4">
-
-                <div>
-                    <button id="Donation-btn" class="text-black font-bold bg-green-400 rounded-xl w-[120px] h-[40px] md:w-[160px] md:h-[60px] text-base md:text-xl">Donation</button>
-                </div>
-
-                <!-- history button -->
-                <div>
-                    <button id="Donation-btn" class="text-black font-bold gap-3 rounded-xl w-[120px] h-[40px] md:w-[160px] md:h-[60px] text-base md:text-xl">History</button>
-                </div>
-
          </div>
-
+        <!-- buttons div -->
+         <div class="btn-container  mx-auto flex gap-4 justify-center py-5 border-b-2 border-[#11111128]">
+            <div><button id="donation-btn" class="text-black font-bold bg-[#B4F461]  rounded-xl w-[120px] h-[40px] md:w-[160px] md:h-[60px]  text-base md:text-xl">Donation</button></div>
+            <div><button id="history-btn" class="border-2 border-[#111111B3] text-[#111111B3] font-bold text-base md:text-xl rounded-xl w-[120px] h-[40px] md:w-[160px] md:h-[60px]">History</button></div>
+         </div>
     </header>
-
-    <main class="mt-6 mb-11">
-        <section id="donate-sec1" class="w-4/5 mx-auto space-y-4">
+    <main class="mt-5 mb-10">
+        <!-- donation card sec -->
+        <section id="donation-sec" class=" w-4/5 mx-auto space-y-4">
 
             <!-- card1 -->
-             <div class="flex flex-col md:flex-row gap-4 border-2 border-black p-5 rounded-xl">
-
-                <!-- image part  -->
+            <div class="flex flex-col md:flex-row gap-4 border-2 border-[#111111B3] p-4 rounded-xl ">
+                <!-- img div left -->
                  <div class="w-full md:w-2/4">
-                    <img src="./image/assets/noakhali.png" alt="loading the image">
+                    <img src="./image/assets/noakhali.png" alt="loading the image ">
                  </div>
-
-                 <!-- text part -->
-                  <div class="w-full md:w-2/4 space-y-4">
-                    <button class="flex items-center gap-2 rounded-lg px-4 py-2 bg-slate-200">
-                        <img src="./image/assets/coin.png" alt="loading the image">
-
+                 <!-- text-div right -->
+                  <div class="w-full md:w-2/4 space-y-5">
+                    <!-- right 1 -->
+                    <button class="flex items-center gap-2 rounded-lg px-4 py-2 bg-[#1111110D] ">
+                        <img src="./image/assets/coin.png" alt="loading the image  AS">
                         <p id="noakhali-balance" class="font-semibold text-xl text-[#111111B3]">0</p>
                         <p class="font-semibold text-xl text-[#111111B3]">BDT</p>
                     </button>
-                    <!-- right2 -->
+                    <!-- right 2 -->
                     <div class="space-y-2">
                         <h3 id="noakhali-title" class="md:text-xl font-extrabold text-black">Donate for Flood at Noakhali, Bangladesh</h3>
                         <p class="md:text-[16px] text-[12px]"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                     </div>
-                    <div class="flex flex-col gap-5"></div>
+                    <!-- right3 -->
+                    <div class="flex flex-col gap-5">
                         <input id="noakhali-input-value" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
                         <button id="noakhali-btn"  class="text-xl font-bold text-black bg-[#B4F461] rounded-lg py-2">Donate Now</button>
                     </div>
-                  </div>  
-             </div>
+                    
+                  </div>
+            </div>
 
-
-             <div class="flex flex-col md:flex-row gap-4 border-2 border-[#111111B3] p-4 rounded-xl ">
+            <!-- card2 -->
+            <div class="flex flex-col md:flex-row gap-4 border-2 border-[#111111B3] p-4 rounded-xl ">
                 <!-- img div left -->
                  <div class="w-full md:w-2/4">
                     <img src="./image/assets/feni.png" alt="loading the image ">
@@ -123,7 +99,7 @@
                   </div>
             </div>
 
-
+            <!-- card3 -->
             <div class="flex flex-col md:flex-row gap-4 border-2 border-[#111111B3] p-4 rounded-xl ">
                 <!-- img div left -->
                  <div class="w-full md:w-2/4">
@@ -148,51 +124,35 @@
                         <button id="quota-btn" class="text-xl font-bold text-black bg-[#B4F461] rounded-lg py-2">Donate Now</button>
                     </div>
                   </div>
+            </div>
+            
         </section>
 
         <!-- history section -->
-        <section  id="history-sec" class="mt-10 w-4/5 mx-auto  hidden">
+         <section  id="history-sec" class="mt-10 w-4/5 mx-auto  hidden">
             <div id="history-div" class="flex flex-col gap-4">
                 
             </div>
          </section>
-
     </main>
-     <!-- modal -->
-     <dialog id="my_modal" class="modal">
-        <div class="modal-box flex gap-2 flex-col items-center text-center">
-            <h3 class="text-3xl font-bold text-black">Congrates!</h3>
-            <img src="./assets/coin.png" alt="" class="w-10 h-10">
-            <p class="py-4">You have donated for humankind</p>
-            <h3 class="text-xl text-black font-bold">Successfully</h3>
-            <div class="modal-action justify-center">
-            <form method="dialog">
-                <button class="btn">Close Confirmation</button>
-            </form>
-            </div>
+
+    <!-- modal -->
+    <dialog id="my_modal" class="modal">
+    <div class="modal-box flex gap-2 flex-col items-center text-center">
+        <h3 class="text-3xl font-bold text-black">Congrates!</h3>
+        <img src="./image/assets/coin.png" alt="loading the image " class="w-10 h-10">
+        <p class="py-4">You have donated for humankind</p>
+        <h3 class="text-xl text-black font-bold">Successfully</h3>
+        <div class="modal-action justify-center">
+        <form method="dialog">
+            <button class="btn">Close Confirmation</button>
+        </form>
         </div>
-        </dialog>
+    </div>
+    </dialog>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="./java.js"></script>
-    <script src="./java1.js"></script>
+    <!-- js connect -->
+     <script src="./java.js"></script>
+     <script src="./java1.js"></script>
 </body>
 </html>
